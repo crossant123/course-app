@@ -4,7 +4,7 @@ import React from 'react'
 const Aboutlayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <section>
-      <header className='bg-gray-100 p-4'>
+      {/* <header className='bg-gray-100 p-4'>
         <nav>
           <ul>
             <li>
@@ -15,7 +15,7 @@ const Aboutlayout = ({ children }: { children: React.ReactNode }) => {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <h1>About Layout</h1>
       <div className='mt-6'>{children}</div>
     </section>
