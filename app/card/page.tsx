@@ -4,59 +4,66 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <section className='flex justify-evenly'>
-      <div id='Business-Card' className='bg-teal-100'>
+    <section className='flex min-h-screen justify-center bg-teal-100'>
+      <div
+        id='Business-Card'
+        className='my-8 flex min-h-[720px] min-w-[1200px] overflow-hidden rounded-2xl bg-white'
+      >
         <div
-          id='Photo-board'
-          className='grid justify-center gap-4 overflow-hidden rounded-lg bg-teal-400 p-4  md:rounded-md'
+          id='contact-section'
+          className='flex h-full w-1/3 flex-col gap-2 bg-green-600 p-4'
         >
-          <h1 className=' font-bold'>Anthony Cross</h1>
-          <Image
-            src='/portrait-image.jpg'
-            width={180}
-            height={0}
-            alt='Picture of Author'
-          ></Image>
-        </div>
-        <div id='Contact-card' className='mt-2 rounded-lg bg-emerald-200 p-4'>
-          <h2 className='font-bold'>Contact</h2>
-          <p>The best ways to contact me:</p>
-
-          <ul className='mt-2 flex flex-row gap-4'>
-            <li>
-              <h3 className='font-semibold'>Email</h3>
+          {/* contact Top Info Section */}
+          <div className='mt-80 flex flex-col  px-12 text-white'>
+            <div className='mb-4'>
+              <div className='my-2 flex flex-row gap-2 font-semibold'>
+                <Image
+                  src={'/email.svg'}
+                  width={25}
+                  height={25}
+                  alt='mail icon'
+                />
+                <h2>Email</h2>
+              </div>
               <p>crossant123@gmail.com</p>
-              <button>Contact Us</button>
-            </li>
-            <li>
-              <h3 className=' font-semibold'>Phone</h3>
+            </div>
+            <div className='mb-4'>
+              <div className='my-2 flex flex-row gap-2 font-semibold'>
+                <Image
+                  src={'/phone.svg'}
+                  width={25}
+                  height={25}
+                  alt='mail icon'
+                />
+                <h2>Phone</h2>
+              </div>
               <p>(616)250-7374</p>
-              <button>Contact Us</button>
-            </li>
-            <li>
-              <h3 className=' font-semibold'>Alternative Contact</h3>
-              <ul>
-                <li>
-                  <h4>Linkedin</h4>
-                  <button>
-                    <Link href='https://www.linkedin.com/in/anthonycross123/'>
-                      Contact Us
-                    </Link>
-                  </button>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div id='Social-Card' className='p-4 font-bold'>
-          Social Card
-        </div>
-        <div id='info-container' className='p-4 '>
-          <div id='Name-Card' className=''>
-            Anthony Cross
+            </div>
           </div>
-          <div id='Bio-Card' className=''>
-            Fill with text about myself
+
+          {/* Left side Footer - Social Section */}
+          <div className='mt-40 px-12'>
+            <h2 className='text-white'>Social Media</h2>
+            <div className='flex flex-row gap-2'>
+              <Image
+                src={'/phone.svg'}
+                width={25}
+                height={25}
+                alt='mail icon'
+              />
+              <Image
+                src={'/phone.svg'}
+                width={25}
+                height={25}
+                alt='mail icon'
+              />
+              <Image
+                src={'/phone.svg'}
+                width={25}
+                height={25}
+                alt='mail icon'
+              />
+            </div>
           </div>
         </div>
       </div>
