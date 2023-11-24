@@ -7,14 +7,15 @@ const page = () => {
     <section className='flex min-h-screen justify-center bg-teal-100'>
       <div
         id='Business-Card'
-        className='my-8 flex min-h-[720px] min-w-[1200px] overflow-hidden rounded-2xl bg-white'
+        className='relative my-8 flex max-h-[720px] min-w-[410px] max-w-[1200px] overflow-hidden rounded-2xl bg-white md:min-w-[1200px]'
       >
+        {/* Begin Contact Div */}
         <div
           id='contact-section'
-          className='flex h-full w-1/3 flex-col gap-2 bg-green-600'
+          className='flex w-1/3 flex-col gap-2 bg-green-600'
         >
           {/* contact Top Info Section */}
-          <div className='mt-80 flex flex-col  px-12 text-white'>
+          <div className='mt-72 flex flex-col px-4 text-white md:px-12'>
             <div className='mb-4'>
               <div className='my-2 flex flex-row gap-2 font-semibold'>
                 <Image
@@ -46,7 +47,7 @@ const page = () => {
           />
 
           {/* Left side Footer - Social Section */}
-          <div className='mt-32 px-12'>
+          <div className='mt-8 px-12'>
             <h2 className='mb-2 text-white'>Social Media</h2>
             <div className='flex flex-row gap-2'>
               <Link
@@ -82,6 +83,48 @@ const page = () => {
                   alt='Linkedin icon'
                 />
               </Link>
+            </div>
+          </div>
+        </div>
+        {/* End Contact Div */}
+
+        {/* Begin Portrait image */}
+        <Image
+          src={'/portrait-image.jpg'}
+          width={200}
+          height={400}
+          alt='Portrait of Developer'
+          className='absolute left-80 top-10 h-[540px] w-auto rounded-xl'
+        />
+        {/* End portrait image */}
+        {/* Begin Description Div */}
+        <div className='whitespace-wrap ml-64 mt-10 flex max-w-md flex-col space-y-6'>
+          <h1 className='flex flex-col text-3xl font-bold'>
+            Anthony <span className='text-emerald-400'>Cross</span>
+          </h1>
+          <div id='Title' className=' flex  gap-4 font-semibold'>
+            <p>Front end Dev</p> <div id='Dot-Separator' /> <p>Michigan</p>
+          </div>
+          <p id='Description' className=' font-medium'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+            fugit nemo in similique, deleniti ullam quisquam quia fuga repellat
+            fugiat autem aperiam velit explicabo ipsam exercitationem quos neque
+            et cumque?
+          </p>
+          <div className=''>
+            <h2 id='Career Goals' className='font-semibold'>
+              Working With Technologies:
+            </h2>
+            {/* create a list of technologies used before */}
+            <div>
+              <ul className=' list-disc'>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>SQL Database</li>
+                <li>Restful API</li>
+                <li>ASP.Net</li>
+                <li>NoSQL Databases (firebase)</li>
+              </ul>
             </div>
           </div>
         </div>
