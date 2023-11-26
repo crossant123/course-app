@@ -3,33 +3,43 @@ import React from 'react'
 
 const Navigation = () => {
   return (
-    <header className='mb-4'>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link href='/'>Home</Link>
-            </li>
-            <li>
-              <Link href='/about'>About Us</Link>
-            </li>
-            <li>
-              <Link href='/contact'>Contact</Link>
-            </li>
-            {/* <li>
-              <Link href=''>Products</Link>
-            </li>
-            <li>
-              <Link href=''>Sales</Link>
-            </li> */}
-          </ul>
-          <div>
-            {/* Create Theme changer */}
-            {/* Create Sign Up icon */}
-            {/* Create Style randomixer */}
-          </div>
-        </nav>
-      </div>
+    <header>
+      <nav className='bg-gray-300'>
+        <ul className='flex flex-row justify-center gap-4'>
+          <li>
+            <Link
+              href='/'
+              className='rounded-md bg-emerald-300 px-2 hover:-translate-y-1'
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='/about'
+              className='rounded-md bg-emerald-300 px-2 hover:-translate-y-1'
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='/contact'
+              className='rounded-md bg-emerald-300 px-2 hover:-translate-y-1'
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='/card'
+              className='rounded-md bg-emerald-300 px-2 hover:-translate-y-1'
+            >
+              Business Card
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

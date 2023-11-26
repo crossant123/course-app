@@ -102,14 +102,21 @@ const page = () => {
           <h1 className='flex flex-col text-3xl font-bold'>
             Anthony <span className='text-emerald-400'>Cross</span>
           </h1>
-          <div id='Title' className=' flex  gap-4 font-semibold'>
-            <p>Front end Dev</p> <div id='Dot-Separator' /> <p>Michigan</p>
+          <div id='Title' className='flex items-center gap-4 font-semibold'>
+            <p>Frontend Dev</p>{' '}
+            <i
+              id='Dot-Separator'
+              className='h-4 w-4 rounded-full bg-gray-900'
+            />{' '}
+            <p>Michigan</p>
           </div>
           <p id='Description' className=' font-medium'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-            fugit nemo in similique, deleniti ullam quisquam quia fuga repellat
-            fugiat autem aperiam velit explicabo ipsam exercitationem quos neque
-            et cumque?
+            I am an{' '}
+            <span className='font-medium text-emerald-400'>Inspired</span> and{' '}
+            <span className='font-medium text-emerald-400'>Creative</span>{' '}
+            Developer with skills in Database design and application
+            development. Focused on my attention to detail and learning new
+            skills.
           </p>
           <div className=''>
             <h2 id='Career Goals' className='font-semibold'>
@@ -128,6 +135,10 @@ const page = () => {
             </div>
           </div>
         </div>
+        {/* Begin Description Div */}
+        <div id='corner decoration' className='' />
+        <div id='underlining decoration' className='' />
+        <div id='photo decoration' className='' />
       </div>
     </section>
   )
