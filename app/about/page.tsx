@@ -4,33 +4,33 @@ import Image from 'next/image'
 function Page() {
   return (
     <div className='container mx-auto px-4 py-8'>
-      <h1 className='text-text dark:text-darktext mb-4 w-60 rounded-md text-3xl  font-bold'>
+      <h1 className='mb-4 w-60 rounded-md text-3xl font-bold text-text  dark:text-darktext'>
         About Me
       </h1>
-      <p className=' text-text dark:text-darktext text-sm italic'>
+      <p className=' text-sm italic text-text dark:text-darktext'>
         This section displays a short description of my education,
         qualifications, and experiences.
       </p>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 '>
         {/* Project 1 */}
         <div
-          className='bg-secondary dark:bg-darksecondary rounded p-4 shadow-md'
+          className='rounded bg-secondary p-4 shadow-md dark:bg-darksecondary'
           id='timeline-container'
         >
           <div id='timeline-header'>
             {/* Think into adding icon next to header */}
-            <h2 className=' text-text dark:text-darktext text-lg font-semibold'>
+            <h2 className=' text-lg font-semibold text-text dark:text-darktext'>
               Education:
             </h2>
             {/* Add date */}
           </div>
           <div className=' m-2' id='timeline-content'>
             {/* Add seperator details / design overarching timeline dots */}
-            <h3 className=' text-md text-text dark:text-darktext mb-1 font-medium'>
-              Bachelor's Degree:
+            <h3 className=' text-md mb-1 font-medium text-text dark:text-darktext'>
+              Bachelors Degree:
             </h3>
             <p className='text-text dark:text-darktext'>
-              -I have a bachelor's degree in Computer Information Systems from
+              -I have a bachelors degree in Computer Information Systems from
               Davenport University.
               <br />
               -I studied programming fundamentals and learned multiple coding
@@ -53,29 +53,29 @@ function Page() {
 
         {/* Project 2 */}
         <div
-          className='bg-secondary dark:bg-darksecondary rounded p-4 shadow-md'
+          className='rounded bg-secondary p-4 shadow-md dark:bg-darksecondary'
           id='timeline-container'
         >
           <div id='timeline-header'>
             {/* Think into adding icon next to header */}
-            <h2 className=' text-text dark:text-darktext text-lg font-semibold'>
+            <h2 className=' text-lg font-semibold text-text dark:text-darktext'>
               Work Experience:
             </h2>
             {/* Add date */}
           </div>
           <div className=' mb-2' id='timeline-content'>
             {/* Add seperator details / design overarching timeline dots */}
-            <h3 className=' text-md text-text dark:text-darktext mb-1 font-medium'>
+            <h3 className=' text-md mb-1 font-medium text-text dark:text-darktext'>
               IT Documentation Specialist
             </h3>
-            <p className=' text-text dark:text-darktext mb-2'>
+            <p className=' mb-2 text-text dark:text-darktext'>
               -I Assist Tire Rack Project management and the IT support team in
               documenting Policy, Procedures, and Training.
             </p>
-            <h3 className=' text-md text-text dark:text-darktext mb-1 font-medium'>
+            <h3 className=' text-md mb-1 font-medium text-text dark:text-darktext'>
               Junior Web Developer
             </h3>
-            <p className=' text-text dark:text-darktext mb-2'>
+            <p className=' mb-2 text-text dark:text-darktext'>
               -I Created web pages, UI Designs, and updated Advertisement
               websites for IQS Directory.
             </p>
@@ -84,7 +84,7 @@ function Page() {
 
         {/* Project 3 */}
         <div
-          className='bg-secondary dark:bg-darksecondary rounded p-4 shadow-md'
+          className='rounded bg-secondary p-4 shadow-md dark:bg-darksecondary'
           id='timeline-container'
         >
           <div id='timeline-header'>
