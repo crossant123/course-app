@@ -19,14 +19,14 @@ function Page() {
         >
           <div id='timeline-header'>
             {/* Think into adding icon next to header */}
-            <h2 className=' text-lg font-semibold text-text dark:text-darktext'>
+            <h2 className=' text-lg font-semibold text-primary dark:text-primary'>
               Education:
             </h2>
             {/* Add date */}
           </div>
           <div className=' m-2' id='timeline-content'>
             {/* Add seperator details / design overarching timeline dots */}
-            <h3 className=' text-md mb-1 font-medium text-text dark:text-darktext'>
+            <h3 className=' text-md mb-1 font-medium text-text dark:text-text'>
               Bachelors Degree:
             </h3>
             <p className='text-text dark:text-darktext'>
@@ -53,12 +53,12 @@ function Page() {
 
         {/* Project 2 */}
         <div
-          className='rounded bg-secondary p-4 shadow-md dark:bg-darksecondary'
+          className='rounded bg-secondary p-4 shadow-md dark:bg-secondary'
           id='timeline-container'
         >
           <div id='timeline-header'>
             {/* Think into adding icon next to header */}
-            <h2 className=' text-lg font-semibold text-text dark:text-darktext'>
+            <h2 className=' text-lg font-semibold text-primary dark:text-primary'>
               Work Experience:
             </h2>
             {/* Add date */}
@@ -89,7 +89,7 @@ function Page() {
         >
           <div id='timeline-header'>
             {/* Think into adding icon next to header */}
-            <h2 className=' text-2x1 mb-4 font-semibold text-black dark:text-gray-400'>
+            <h2 className=' text-2x1 mb-4 font-semibold text-primary dark:text-primary'>
               Certifications:{' '}
             </h2>
             {/* Add date */}
@@ -107,8 +107,8 @@ function Page() {
               className=''
             />
             <p>
-              <span className='text-emerald-400'>Completed</span> 2023
-              Smartsheet core app Certification
+              <span className='text-primary'>Completed</span> 2023 Smartsheet
+              core app Certification
             </p>
           </div>
         </div>

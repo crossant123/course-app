@@ -24,6 +24,7 @@ export default function RootLayout({
             <Navigation />
           </header>
           {children}
+          <footer></footer>
         </Providers>
       </body>
     </html>

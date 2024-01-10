@@ -4,18 +4,18 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <section className='flex min-h-screen justify-center bg-teal-100'>
+    <section className='flex min-h-screen justify-center bg-background dark:bg-background'>
       <div
         id='Business-Card'
-        className='relative my-8 flex max-h-[720px] min-w-[410px] max-w-[1200px] overflow-hidden rounded-2xl bg-white md:min-w-[1200px]'
+        className='relative my-8 flex max-h-[720px] min-w-[410px] max-w-[1200px] overflow-hidden rounded-2xl bg-background dark:bg-darkbackground md:min-w-[1200px]'
       >
         {/* Begin Contact Div */}
         <div
           id='contact-section'
-          className='flex w-1/3 flex-col gap-2 bg-green-600'
+          className='flex w-1/3 flex-col gap-2 bg-primary dark:bg-primary'
         >
           {/* contact Top Info Section */}
-          <div className='mt-72 flex flex-col px-4 text-white md:px-12'>
+          <div className='mt-72 flex flex-col px-4 text-text dark:text-darktext md:px-12'>
             <div className='mb-4'>
               <div className='my-2 flex flex-row gap-2 font-semibold'>
                 <Image
@@ -43,12 +43,12 @@ const page = () => {
           </div>
           <div
             id='Separator bar'
-            className='mt-8 min-h-[20px] min-w-full bg-white'
+            className='mt-8 min-h-[20px] min-w-full bg-accent dark:bg-accent'
           />
 
           {/* Left side Footer - Social Section */}
           <div className='mt-8 px-12'>
-            <h2 className='mb-2 text-white'>Social Media</h2>
+            <h2 className='mb-2 text-text dark:text-text'>Social Media</h2>
             <div className='flex flex-row gap-2'>
               <Link
                 href={'https://www.facebook.com/crossant123'}
@@ -99,31 +99,45 @@ const page = () => {
         {/* End portrait image */}
         {/* Begin Description Div */}
         <div className='whitespace-wrap ml-64 mt-10 flex max-w-md flex-col space-y-6'>
-          <h1 className='flex flex-col text-3xl font-bold'>
-            Anthony <span className='text-emerald-400'>Cross</span>
+          <h1 className='flex flex-col text-3xl font-bold text-text dark:text-darktext'>
+            Anthony <span className='text-primary'>Cross</span>
           </h1>
-          <div id='Title' className='flex items-center gap-4 font-semibold'>
+          <div
+            id='Title'
+            className='flex items-center gap-4 font-semibold text-text dark:text-darktext'
+          >
             <p>Frontend Dev</p>{' '}
             <i
               id='Dot-Separator'
-              className='h-4 w-4 rounded-full bg-gray-900'
+              className='h-4 w-4 rounded-full bg-accent dark:bg-accent'
             />{' '}
             <p>Michigan</p>
           </div>
-          <p id='Description' className=' font-medium'>
+          <p
+            id='Description'
+            className=' font-medium text-text dark:text-darktext'
+          >
             I am an{' '}
-            <span className='font-medium text-emerald-400'>Inspired</span> and{' '}
-            <span className='font-medium text-emerald-400'>Creative</span>{' '}
+            <span className='font-medium text-primary dark:text-primary'>
+              Inspired
+            </span>{' '}
+            and{' '}
+            <span className='font-medium text-primary dark:text-primary'>
+              Creative
+            </span>{' '}
             Developer with skills in Database design and application
             development. Focused on my attention to detail and learning new
             skills.
           </p>
           <div className=''>
-            <h2 id='Career Goals' className='font-semibold'>
+            <h2
+              id='Career Goals'
+              className='font-semibold text-primary dark:text-primary'
+            >
               Working With Technologies:
             </h2>
             {/* create a list of technologies used before */}
-            <div>
+            <div className=' text-text dark:text-text'>
               <ul className=' list-disc'>
                 <li>JavaScript</li>
                 <li>C#</li>

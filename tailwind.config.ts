@@ -24,16 +24,11 @@ const config: Config = {
     },
     extend: {
       colors: {
-        text: '#050505',
-        background: '#fafafa',
-        primary: '#b52639',
-        secondary: '#fdced3',
-        accent: '#f50a29',
-        darktext: '#fafafa',
-        darkbackground: '#050505',
-        darkprimary: '#b52639',
-        darksecondary: '#310207',
-        darkaccent: '#f96c7f'
+        text: 'var(--text)',
+        background: 'var(--background)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        accent: 'var(--accent)'
       }
     }
   },
