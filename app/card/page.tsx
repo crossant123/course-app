@@ -3,8 +3,10 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const page = () => {
-  const [isMobile, setIsMobile] = useState(false)
+interface PageProps {}
+
+const Page: React.FC<PageProps> = () => {
+  const [isMobile, setIsMobile] = useState<boolean>(false)
 
   useEffect(() => {
     const handleResize = () => {
@@ -300,4 +302,4 @@ const page = () => {
     </section>
   )
 }
-export default page
+export default Page

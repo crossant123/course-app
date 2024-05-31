@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface BlogPostProps {
-  id: string
+  key: string
   title: string
   description: string
   date: string
@@ -11,7 +11,7 @@ interface BlogPostProps {
 }
 
 const BlogPost = React.memo<BlogPostProps>(
-  ({ id, title, description, date, link, imageURL, authorName }) => {
+  ({ key, title, description, date, link, imageURL, authorName }) => {
     return (
       <div className='mb-8 rounded-lg bg-accent shadow-md'>
         {imageURL && (
@@ -37,5 +37,6 @@ const BlogPost = React.memo<BlogPostProps>(
     )
   }
 )
+BlogPost.displayName = 'BlogPost'
 
 export default BlogPost

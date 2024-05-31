@@ -1,6 +1,5 @@
 import React from 'react'
 import BlogPost from './BlogPost'
-import { describe } from 'node:test'
 
 const BlogPosts = [
   {
@@ -30,7 +29,7 @@ export default function Blog() {
     <div className=''>
       {BlogPosts.map(post => (
         <BlogPost
-          id={post.id}
+          key={post.id}
           title={post.title}
           description={post.description}
           date={post.date}
