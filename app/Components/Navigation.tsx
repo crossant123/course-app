@@ -5,7 +5,7 @@ import Themebutton from './themebutton'
 const Navigation = () => {
   return (
     <nav className='h-full w-full bg-background p-4 dark:bg-secondary'>
-      <ul className='flex flex-row justify-center gap-3 text-text dark:text-darktext'>
+      <ul className='dark:text-darktext flex flex-row justify-center gap-3 text-text'>
         <li>
           <Link
             href='/'
