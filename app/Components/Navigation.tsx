@@ -38,6 +38,14 @@ const Navigation = () => {
             Business Card
           </Link>
         </li>
+        <li>
+          <Link
+            href='/blog'
+            className='rounded-md bg-primary px-2 hover:-translate-y-1 dark:bg-primary'
+          >
+            Blog
+          </Link>
+        </li>
       </ul>
       <Themebutton />
     </nav>

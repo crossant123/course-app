@@ -6,7 +6,7 @@ interface Params {
 }
 
 export interface Frontmatter {
-  title: string
+  Title: string
   Author: string
 }
 
@@ -19,7 +19,7 @@ const page = async ({ params }: { params: Params }) => {
     <section className='py-24'>
       <div className='mb-4 py-2'>
         <header className='rounded bg-gray-100 p-8'>
-          <h1 className='font-serif text-3xl'>{frontmatter.title}</h1>
+          <h1 className='font-serif text-3xl'>{frontmatter.Title}</h1>
           <p className='text-sm font-light uppercase leading-4'>
             {frontmatter.Author}
           </p>
