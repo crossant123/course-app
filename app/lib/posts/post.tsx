@@ -8,7 +8,7 @@ import rehypePrettyCode, { Options } from 'rehype-pretty-code'
 import { Node, Element } from 'hast'
 
 const options: Options = {
-  theme: 'github-light',
+  theme: 'one-dark-pro',
   onVisitLine(node: Element) {
     // Add a leading space to empty lines
     if (node.children.length === 0) {
@@ -52,7 +52,7 @@ const components = {
   h2: (props: H2Props) => (
     <h2
       {...props}
-      className={`mb-3 text-3xl font-bold ${props.className || ''}`}
+      className={`mb-3 text-3xl font-bold ${props.className || ''} `}
     >
       {props.children}
     </h2>
@@ -60,7 +60,7 @@ const components = {
   h3: (props: H3Props) => (
     <h3
       {...props}
-      className={`mb-2 text-2xl font-semibold ${props.className || ''}`}
+      className={`mb-2 text-2xl font-semibold ${props.className || ''} `}
     >
       {props.children}
     </h3>
@@ -68,31 +68,31 @@ const components = {
   h4: (props: H4Props) => (
     <h4
       {...props}
-      className={`mb-2 text-xl font-semibold ${props.className || ''}`}
+      className={`mb-2 text-xl font-semibold ${props.className || ''} `}
     >
       {props.children}
     </h4>
   ),
   p: (props: PProps) => (
-    <p {...props} className={`mb-4 ${props.className || ''}`}>
+    <p {...props} className={`mb-4 ${props.className || ''} `}>
       {props.children}
     </p>
   ),
   ul: (props: UlProps) => (
-    <ul {...props} className={`mb-4 list-disc pl-6 ${props.className || ''}`}>
+    <ul {...props} className={`mb-4 list-disc pl-6 ${props.className || ''} `}>
       {props.children}
     </ul>
   ),
   ol: (props: OlProps) => (
     <ol
       {...props}
-      className={`mb-4 list-decimal pl-6 ${props.className || ''}`}
+      className={`mb-4 list-decimal pl-6 ${props.className || ''} `}
     >
       {props.children}
     </ol>
   ),
   li: (props: LiProps) => (
-    <li {...props} className={`mb-2 ${props.className || ''}`}>
+    <li {...props} className={`mb-2 ${props.className || ''} `}>
       {props.children}
     </li>
   ),
@@ -101,16 +101,13 @@ const components = {
       {...props}
       className={`mb-4 border-l-4 border-gray-300 pl-4 ${
         props.className || ''
-      }`}
+      } dark:border-gray-600 `}
     >
       {props.children}
     </blockquote>
   ),
   code: (props: CodeProps) => (
-    <pre
-      {...props}
-      className={`mb-4 rounded bg-gray-100 p-4 ${props.className || ''}`}
-    >
+    <pre {...props} className={`mb-4 rounded p-4 ${props.className || ''} `}>
       <code>{props.children}</code>
     </pre>
   ),

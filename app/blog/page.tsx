@@ -1,5 +1,4 @@
 import React from 'react'
-import Blog from './Blog'
 import { getAllPosts } from '../lib/posts/post'
 import Link from 'next/link'
 
