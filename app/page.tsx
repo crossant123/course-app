@@ -107,10 +107,10 @@ export default function Home() {
           <p className='mb-8 text-lg'>
             Crafted with the cutting-edge Next.js framework, this Netflix clone
             harnesses the robustness of Firebase for seamless authentication and
-            real-time data synchronization. Powered by Stripe's secure payment
-            gateway, it offers a smooth and reliable subscription experience.
-            Immerse yourself in a world of entertainment, where the latest
-            movies and shows are just a click away.
+            real-time data synchronization. Powered by Stripe&lsquo;s secure
+            payment gateway, it offers a smooth and reliable subscription
+            experience. Immerse yourself in a world of entertainment, where the
+            latest movies and shows are just a click away.
           </p>
         </div>
       </section>
