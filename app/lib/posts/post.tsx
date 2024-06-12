@@ -7,6 +7,7 @@ import NewsLetter from '../../Components/NewsLetter'
 import rehypePrettyCode, { Options } from 'rehype-pretty-code'
 import { Node, Element } from 'hast'
 
+// rehype-pretty-code options
 const options: Options = {
   theme: 'one-dark-pro',
   onVisitLine(node: Element) {
